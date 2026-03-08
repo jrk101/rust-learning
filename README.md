@@ -1,13 +1,11 @@
-# Rust Learning Journey
+# Rust Learning 🦀
 
-## Day 1
-- Created first Cargo project
-- Compiled Hello World
+This repository contains the Rust code I write while learning and practicing the Rust programming language.
 
-## Day 2
-- Read input using stdin()
-- Built a guessing game in Rust
+## What is in this repo
+- Practice exercises
+- Small Rust programs
+- Solutions from coding practice platforms
 
-## Day 3
-- Learned constants using const and shadowing with let. 
-- Used tuples to store mixed types and arrays to store values of the same type.
+## Purpose
+To track my Rust learning progress and improve my understanding of Rust concepts.
