@@ -1,0 +1,1 @@
+C:\Users\josep\Documents\GitHub\rust-learning\chapter-notes\ch01-hello-world\target\debug\ch01-hello-world.exe: C:\Users\josep\Documents\GitHub\rust-learning\chapter-notes\ch01-hello-world\src\main.rs
