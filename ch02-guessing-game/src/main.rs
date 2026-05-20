@@ -2,6 +2,7 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 fn main(){
+    loop{
     println!("Enter a number:");
     let mut guess=String::new();
     io::stdin().read_line(&mut guess).expect("Failed to read input");
@@ -11,6 +12,7 @@ fn main(){
     match guess.cmp(&random_number){
         Ordering::Less => println!("Very less!"),
         Ordering::Greater => println!("Very Big!"),
-        Ordering::Equal => println!("You Win!"),
+        Ordering::Equal => {println!("You Win!"); break;}
     }
+}
 }
