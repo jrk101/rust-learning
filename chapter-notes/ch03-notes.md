@@ -1,4 +1,4 @@
-# Chapter 3 - Data Types
+# Chapter 3 - Variables, Functions, and Control Flow
 
 ## Constants
 
@@ -81,8 +81,6 @@ let (x, y, z) = tup;
 let tup = (5, 10, 12);
 let five = tup.0;
 
----
-
 ### b) Array Type
 - Store multiple values of same type
 - Fixed length
@@ -99,3 +97,90 @@ let a = [3; 5]   // same as
 Accessing the element:
 let a = [1, 2, 3, 4, 5];
 let first = a[0];
+
+---
+
+## Functions
+
+Passing arguments to the parameters:
+
+fn second_function(x: i32) {
+    println!("The value of x is: {x}");
+}
+fn main() {
+    second_function(x);
+}
+
+In function signature we must declare the type of parameters.
+While defining multiple parameters, it can be separated by commas.
+
+fn main() {
+    function_2("Manu", 20);
+}
+function_2(name: &str, age: i32) {
+    println!("Name: {name}, Age: {age}");
+}
+
+---
+
+## Statements and Expressions
+
+Statements - Instructions that perform some action and do not return a value.
+Expressions - Evaluate to a resultant value.
+
+let x = {
+    let y = 4    // x = 4
+    y
+}
+(we cannot write let x = let y = 4, let is a statement and it doesn't return a value)
+
+---
+
+## Functions with Return Values
+
+eg1:
+fn five() -> i32 {
+    5
+}
+fn main() {
+    let x = five();
+}
+
+eg2:
+fn main() {
+    let x = five(6);
+}
+fn fun(x: i32) -> i32 {
+    x - 1
+}
+
+---
+
+## Control Flow
+
+### if Expressions
+
+eg1:
+let n = 5;
+if n > 3 {
+    println!("The condition is true");
+}
+else {
+    println!("The condition is false");
+}
+
+eg2:
+if condition {
+    ...
+} else if condition {
+    ...
+} else {
+    ...
+}
+
+### Using if in a let statement
+
+let condition = true;
+let number = if condition { 5 } else { 6 };
+
+The type of if and else arm must be same.
